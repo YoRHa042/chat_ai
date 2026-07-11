@@ -1,0 +1,37 @@
+# Voice Configuration for Chat AI
+# Default engine: edge-tts (free, high-quality Japanese neural voices)
+# Optional engine: gpt-sovits (anime character voice cloning, requires GPU)
+
+engine: edge  # edge | gpt-sovits
+
+edge:
+  # Japanese anime-style voices from Microsoft Edge TTS
+  voices:
+    - id: ja-JP-NanamiNeural
+      name: 七海 (Nanami)
+      gender: female
+      style: 自然温暖 - Natural & Warm (Recommended)
+    - id: ja-JP-AoiNeural
+      name: 葵 (Aoi)
+      gender: female
+      style: 年轻活泼 - Young & Energetic
+    - id: ja-JP-MayuNeural
+      name: 真由 (Mayu)
+      gender: female
+      style: 可爱甜美 - Cute & Sweet
+    - id: ja-JP-ShioriNeural
+      name: 栞 (Shiori)
+      gender: female
+      style: 清晰知性 - Clear & Intelligent
+    - id: ja-JP-NaokiNeural
+      name: 直樹 (Naoki)
+      gender: male
+      style: 年轻自信 - Young & Confident
+  default_voice: ja-JP-NanamiNeural
+
+gpt_sovits:
+  # Reserved for future GPU-accelerated anime voice cloning
+  api_url: http://localhost:9880
+  # Pre-trained models available at:
+  # https://huggingface.co/lpkpaco/Bocchi-The-Rock-GPT-SoVITS-Models
+  models: {}
